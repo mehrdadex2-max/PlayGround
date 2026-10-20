@@ -1,0 +1,716 @@
+<!doctype html>
+<html lang="fa" dir="rtl" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سرزمین میانه | دنیای ارباب حلقه‌ها</title>
+  <meta name="description" content="راهنمای جامع دنیای ارباب حلقه‌ها و سرزمین میانه؛ نقشه تعاملی، نژادها، شخصیت‌ها، حلقه‌های قدرت، گاه‌شمار، کتاب‌ها، فیلم‌ها، گنجینه‌ها و آزمون هواداران.">
+  <meta name="theme-color" content="#0b0d10">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/Vazirmatn-Arabic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Cinzel-Latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/data.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <a class="skip-link" href="#main">پرش به محتوای اصلی</a>
+
+  <svg class="svg-sprite" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-ring" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><circle cx="12" cy="12" r="5.6"/><path d="M12 3.6c1.4 0 2.7.3 3.8.9"/></symbol>
+    <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M20 4C12.5 4 5 8.6 5 15.5c0 2.4 1.6 4.5 4 4.5 7 0 11-7.4 11-16Z"/><path d="M5.8 19.2C8.5 14.4 12.2 10.6 17 7.8"/></symbol>
+    <symbol id="i-axe" viewBox="0 0 24 24"><path d="M6 20 17 6"/><path d="M14.5 3.5c2.6-.8 5.2.3 6 2.1.8 1.9-.4 4.3-2.8 5.4l-3.8-7.1Z"/><path d="M4.2 21.8 8.4 17"/></symbol>
+    <symbol id="i-crown" viewBox="0 0 24 24"><path d="m3 8 4.4 3.4L12 5l4.6 6.4L21 8l-1.7 10H4.7L3 8Z"/><path d="M4.8 18h14.4"/></symbol>
+    <symbol id="i-door" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 17V9"/><path d="M9.4 10.2 12 7.6l2.6 2.6"/><path d="M8.2 17h7.6"/><circle cx="12" cy="12" r="9" class="dotted"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2.5 12S6 5.8 12 5.8 21.5 12 21.5 12 18 18.2 12 18.2 2.5 12 2.5 12Z"/><circle cx="12" cy="12" r="3.2"/><path d="M12 2v2.2M12 19.8V22M3.6 5.4l1.6 1.6M18.8 17l1.6 1.6"/></symbol>
+    <symbol id="i-tree" viewBox="0 0 24 24"><path d="M12 21v-7"/><path d="M12 14c-2.6 0-4.8-2-4.8-4.6 0-2.4 1.8-4.4 4.2-4.7C11.8 2.6 13.4 2 15 2c2.5 0 4.5 1.9 4.5 4.2 0 .4 0 .8-.2 1.2 1 .7 1.7 1.8 1.7 3.1 0 2.1-1.7 3.8-3.9 3.8-.5 0-1.1-.1-1.6-.3-.8.7-1.7 1-2.5 1Z"/><path d="M9 21h6"/></symbol>
+    <symbol id="i-dragon" viewBox="0 0 24 24"><path d="M3 15c3.4 0 5-2.3 6.4-5.1C11 7.2 13.2 5 17 5c2 0 3.4 1.1 4 2.6-1.3.2-2.2 1-2.4 2.2 1.7.3 2.7 1.6 2.7 3.2-1.2-.5-2.4-.4-3.3.3.2 1.7-.5 3.1-2 4.1l.4 2.1-2-.8c-2.4.5-4.7-.2-5.8-1.8-1.3.9-2.9 1.2-4.6.9Z"/><path d="M15.5 9.4h.1"/></symbol>
+    <symbol id="i-sword" viewBox="0 0 24 24"><path d="m5 19 3.5-3.5"/><path d="m9.2 15.8 8.3-9.3 1.8-2.7.3 3.2-8.3 9.3-2.1-.5Z"/><path d="m6.5 14.5 3 3"/><path d="m4.8 19.2 1.4-1.4"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2.5 2.3 7.2 7.2 2.3-7.2 2.3L12 21.5l-2.3-7.2-7.2-2.3 7.2-2.3L12 2.5Z"/></symbol>
+    <symbol id="i-mountain" viewBox="0 0 24 24"><path d="M2.5 20 9 6l4 7 2.3-4L21.5 20H2.5Z"/><path d="m6.6 11.5 2.4 1.5 2.5-1.7"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M12 6.5C10 4.9 7.2 4.2 3.5 4.5v14c3.7-.3 6.5.4 8.5 2 2-1.6 4.8-2.3 8.5-2v-14c-3.7-.3-6.5.4-8.5 2Z"/><path d="M12 6.5v14"/></symbol>
+    <symbol id="i-film" viewBox="0 0 24 24"><rect x="2.8" y="4.5" width="18.4" height="15" rx="2"/><path d="M7.6 4.5v15M16.4 4.5v15M2.8 9h4.8M2.8 15h4.8M16.4 9h4.8M16.4 15h4.8"/></symbol>
+    <symbol id="i-map" viewBox="0 0 24 24"><path d="M9 4 3 6.2v14L9 18l6 2 6-2.2v-14L15 6 9 4Z"/><path d="M9 4v14M15 6v14"/></symbol>
+    <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5 5-2Z"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2v2.2M12 19.8V22M2 12h2.2M19.8 12H22M4.9 4.9l1.6 1.6M17.5 17.5l1.6 1.6M19.1 4.9l-1.6 1.6M6.5 17.5l-1.6 1.6"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4 8.5 8.5 0 1 0 20 14.5Z"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M20 12H4M10 6l-6 6 6 6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m4.5 12.5 5 5L20 6.5"/></symbol>
+    <symbol id="i-scroll" viewBox="0 0 24 24"><path d="M6 3h12a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2V5"/><path d="M6 3a2 2 0 0 0-2 2v2h4"/><path d="M9 8h8M9 12h8M9 16h5"/></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 22c4 0 7-2.7 7-6.6 0-3-2-5.1-4-7.4-.8 2-2 3-3.4 3.6.3-3.5-1-6.3-3.1-8.6.2 4-3.5 6.6-3.5 11.4C5 19 7.9 22 12 22Z"/><path d="M9.5 18c0-1.8 1.2-3 2.5-4.5 1.1 1.5 2.5 2.6 2.5 4.4 0 1.2-1 2.1-2.5 2.1s-2.5-.8-2.5-2Z"/></symbol>
+    <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 2.5 4.5 5.4v6.4c0 4.6 3 8.1 7.5 10 4.5-1.9 7.5-5.4 7.5-10V5.4L12 2.5Z"/><path d="M12 7v9M8.5 10.5h7"/></symbol>
+    <symbol id="i-bow" viewBox="0 0 24 24"><path d="M6 3c6 2 9 6.5 9 12 0 2-.5 4-1.5 6M6 3l1 8M6 3l8 .8"/><path d="M4 20 20 4"/><path d="m15.5 4.5 4.5-4-1 4.7-3.7.8"/></symbol>
+    <symbol id="i-staff" viewBox="0 0 24 24"><path d="M7 21 15.5 5.5"/><circle cx="17" cy="4.5" r="2.2"/><path d="M13.8 8.3c1.4-1.2 3.1-1.6 4.8-1.2"/></symbol>
+    <symbol id="i-gem" viewBox="0 0 24 24"><path d="m12 2.5 8 6.2L12 21.5 4 8.7l8-6.2Z"/><path d="M4 8.7h16M12 2.5 8.5 8.7 12 21.5l3.5-12.8L12 2.5Z"/></symbol>
+    <symbol id="i-helm" viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0v7H4v-7Z"/><path d="M8 13v7M16 13v7M4 13h16M12 5V2.5"/></symbol>
+    <symbol id="i-horse" viewBox="0 0 24 24"><path d="M5 21c0-3.2 1.5-5.5 4.3-7.2L8 9.5c-.6-2.8.5-5.4 2.7-7l1.2 2.6L16 7l3.4 1.4-2.2 2.6 1.3 3.2c-1.7 1-3 2.4-3.8 4.2l-.4 2.6"/><path d="M8 9.6c1.4-1 3-1.3 4.6-.7"/></symbol>
+    <symbol id="i-tower" viewBox="0 0 24 24"><path d="M6 21V8l-2-3h3V2.5h3V5h4V2.5h3V5h3l-2 3v13"/><path d="M4 21h16M10 21v-5h4v5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 4.5 20 12 8 19.5v-15Z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 2v5M12 17v5M2 12h5M17 12h5M5 5l3.2 3.2M15.8 15.8 19 19M19 5l-3.2 3.2M8.2 15.8 5 19"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24"><path d="M9.5 6.5C6 7.8 4 10.4 4 14v3.5h5.5V12H6.8c.2-1.6 1.2-2.8 3-3.6l-.3-1.9ZM19.5 6.5C16 7.8 14 10.4 14 14v3.5h5.5V12h-2.7c.2-1.6 1.2-2.8 3-3.6l-.3-1.9Z"/></symbol>
+    <symbol id="i-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></symbol>
+    <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21 4 3.3 10.7c-.9.3-.9 1.5 0 1.8l4.4 1.3 1.7 5.2c.2.7 1.1.9 1.5.3l2.3-2.7 4.3 3.1c.7.5 1.6.1 1.8-.7L22 5.1c.2-.8-.3-1.4-1-1.1Z"/><path d="m8.4 13.7 10.4-6.9-8.3 7.8-.3 3.2"/></symbol>
+  </svg>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="سرزمین میانه، بازگشت به ابتدای صفحه">
+        <span class="brand-mark">
+          <svg viewBox="0 0 48 48" aria-hidden="true">
+            <circle cx="24" cy="24" r="19.5" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55"/>
+            <circle cx="24" cy="24" r="14.5" fill="none" stroke="currentColor" stroke-width="3.4"/>
+            <path d="M24 35V21" fill="none" stroke="currentColor" stroke-width="1.6"/>
+            <path d="M24 22c-4.4 0-6.8-3.3-6-6.7 3.6-.8 6.9 1.5 6.9 6.1 0-4.6 3.3-6.9 6.9-6.1.8 3.4-1.7 6.7-6.1 6.7" fill="none" stroke="currentColor" stroke-width="1.4"/>
+            <path d="M19 35h10" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <strong>سرزمین میانه</strong>
+          <small>THE LORD OF THE RINGS</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="ناوبری اصلی">
+        <a href="#home" class="nav-link is-active">خانه</a>
+        <a href="#map" class="nav-link">نقشه</a>
+        <a href="#races" class="nav-link">نژادها</a>
+        <a href="#characters" class="nav-link">شخصیت‌ها</a>
+        <a href="#timeline" class="nav-link">گاه‌شمار</a>
+        <a href="#books" class="nav-link">کتاب و فیلم</a>
+        <a href="#gallery" class="nav-link">گالری</a>
+        <a href="#quiz" class="nav-link">آزمون</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="searchOpen" type="button" aria-label="جست‌وجو در سایت" title="جست‌وجو (Ctrl+K)">
+          <svg class="icon"><use href="#i-search"/></svg>
+        </button>
+        <button class="icon-btn theme-btn" id="themeToggle" type="button" aria-label="تغییر حالت روز و شب" title="حالت روز / شب">
+          <svg class="icon icon-moon"><use href="#i-moon"/></svg>
+          <svg class="icon icon-sun"><use href="#i-sun"/></svg>
+        </button>
+        <button class="menu-btn" id="menuToggle" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="باز کردن منو">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <canvas id="heroCanvas" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow hero-eyebrow"><span></span>THE LORD OF THE RINGS<span></span></p>
+          <h1 id="heroTitle">
+            در سرزمین میانه،<br>
+            <span class="gold-text">یک حلقه</span> بر همه چیز<br>
+            حکومت می‌کند
+          </h1>
+          <p class="hero-lead">سفری جامع به دنیای آردا؛ از تپه‌های آرام شایر تا آتش کوه نابودی. با افسانه‌ها، نژادها، قهرمانان، نبردها و گنجینه‌هایی که جی. آر. آر. تالکین آفرید.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#map">
+              <span>کاوش در سرزمین میانه</span>
+              <svg class="icon"><use href="#i-map"/></svg>
+            </a>
+            <a class="btn btn-ghost" href="#quiz">
+              <svg class="icon"><use href="#i-scroll"/></svg>
+              <span>آزمون هواداران</span>
+            </a>
+          </div>
+          <div class="hero-stats" aria-label="آمار دنیای تالکین">
+            <div class="hero-stat"><strong data-count="3" data-fa="true">۳</strong><span>دوره بزرگ</span></div>
+            <div class="hero-stat"><strong data-count="20" data-fa="true">۲۰</strong><span>حلقه قدرت</span></div>
+            <div class="hero-stat"><strong data-count="7" data-fa="true">۷</strong><span>نژاد اصلی</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="ring-stage">
+            <div class="ring-halo"></div>
+            <svg class="one-ring" viewBox="0 0 560 560" role="img" aria-label="حلقه یگانه">
+              <defs>
+                <linearGradient id="goldRing" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0" stop-color="#5b3d10"/>
+                  <stop offset=".16" stop-color="#c99a3b"/>
+                  <stop offset=".33" stop-color="#f6e1a1"/>
+                  <stop offset=".48" stop-color="#c28a28"/>
+                  <stop offset=".63" stop-color="#f4d98b"/>
+                  <stop offset=".82" stop-color="#9a6b1a"/>
+                  <stop offset="1" stop-color="#4d330d"/>
+                </linearGradient>
+                <linearGradient id="goldInner" x1="1" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#3b2608"/>
+                  <stop offset=".45" stop-color="#d3a744"/>
+                  <stop offset="1" stop-color="#2b1b05"/>
+                </linearGradient>
+                <radialGradient id="ringAura" cx="50%" cy="50%" r="50%">
+                  <stop offset=".55" stop-color="#e0ad3e" stop-opacity=".28"/>
+                  <stop offset=".78" stop-color="#d08a26" stop-opacity=".1"/>
+                  <stop offset="1" stop-color="#d08a26" stop-opacity="0"/>
+                </radialGradient>
+                <filter id="ringGlow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="10" result="blur"/>
+                  <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+                </filter>
+                <path id="ringInscriptionPath" d="M280 128a152 152 0 1 1-.1 0"/>
+              </defs>
+              <circle cx="280" cy="280" r="252" fill="url(#ringAura)"/>
+              <g class="ring-body" filter="url(#ringGlow)">
+                <circle cx="280" cy="280" r="168" fill="none" stroke="#2a1a05" stroke-width="42"/>
+                <circle cx="280" cy="280" r="168" fill="none" stroke="url(#goldRing)" stroke-width="32"/>
+                <circle cx="280" cy="280" r="184" fill="none" stroke="#3a2508" stroke-width="2.4" opacity=".9"/>
+                <circle cx="280" cy="280" r="152" fill="none" stroke="#3a2508" stroke-width="2.4" opacity=".9"/>
+                <circle cx="280" cy="280" r="168" fill="none" stroke="url(#goldInner)" stroke-width="4" opacity=".75"/>
+              </g>
+              <g class="ring-runes">
+                <circle cx="280" cy="280" r="168" fill="none" stroke="none"/>
+                <text class="ring-text">
+                  <textPath href="#ringInscriptionPath" startOffset="2%">ASH NAZG DURBATULÛK · ASH NAZG GIMBATUL · ASH NAZG THRAKATULÛK · AGH BURZUM-ISHI KRIMPATUL ·</textPath>
+                </text>
+              </g>
+              <circle cx="280" cy="112" r="5" fill="#fbe9ae" opacity=".9"/>
+              <circle cx="448" cy="280" r="3.4" fill="#fbe9ae" opacity=".7"/>
+              <circle cx="280" cy="448" r="4" fill="#fbe9ae" opacity=".6"/>
+              <circle cx="112" cy="280" r="3" fill="#fbe9ae" opacity=".7"/>
+            </svg>
+            <div class="ring-caption">
+              <span class="ring-caption-line"></span>
+              <span>ONE RING TO RULE THEM ALL</span>
+              <span class="ring-caption-line"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-mountains" aria-hidden="true">
+        <svg viewBox="0 0 1600 320" preserveAspectRatio="none">
+          <defs>
+            <linearGradient id="mtnFar" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#283240"/><stop offset="1" stop-color="#10151c"/>
+            </linearGradient>
+            <linearGradient id="mtnNear" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0" stop-color="#171e27"/><stop offset="1" stop-color="#080b0f"/>
+            </linearGradient>
+          </defs>
+          <path d="M0 250 130 180l90 40 120-95 110 75 90-30 140 85 110-60 160 90 120-50 130 60 150-95 150 95v115H0Z" fill="url(#mtnFar)" opacity=".55"/>
+          <path d="M0 290 90 240l110 35 130-70 110 55 100-20 120 70 160-55 120 65 130-30 180 55 120-45 140 60v70H0Z" fill="url(#mtnNear)"/>
+          <path d="M0 310c170-30 300-8 450 8s280 8 430-10 310-14 470 12 250 6 250 6v24H0Z" fill="#06080b"/>
+        </svg>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="به بخش بعدی بروید">
+        <span>سفر را آغاز کن</span>
+        <i></i>
+      </a>
+    </section>
+
+    <section class="section section-about" id="about" aria-labelledby="aboutTitle">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-intro reveal">
+            <p class="eyebrow">THE LEGENDARIUM</p>
+            <h2 id="aboutTitle">دنیایی که <span class="gold-text">اسطوره</span> شد</h2>
+            <p class="lead">سرزمین میانه تنها یک قاره خیالی نیست؛ کالبدی زنده از تاریخ، زبان و ایمان است. تالکین در طول بیش از نیم قرن، از دل شعرها و زبان‌های باستانی، جهانی ساخت که الف‌ها در آن جاودانه‌اند، دورف‌ها در سنگ می‌کاوند و هابیت‌ها آرام‌ترین گوشه جهان را خانه خود می‌دانند.</p>
+            <p>هر داستان این جهان، از «سیلماریلیون» تا «بازگشت پادشاه»، درباره یک پرسش است: قدرت چه بهایی دارد، و آیا کوچک‌ترین موجودات می‌توانند بزرگ‌ترین تاریکی را شکست دهند؟</p>
+            <blockquote class="quote-card">
+              <svg class="icon"><use href="#i-quote"/></svg>
+              <p>«حتی کوچک‌ترین فرد هم می‌تواند مسیر آینده را تغییر دهد.»</p>
+              <cite>گالادریل، یاران حلقه</cite>
+            </blockquote>
+          </div>
+          <div class="about-pillars">
+            <article class="pillar reveal" style="--delay:.05s">
+              <span class="pillar-icon"><svg class="icon"><use href="#i-star"/></svg></span>
+              <h3>آردا و ایلوواتار</h3>
+              <p>جهانی که از آهنگ آینور زاده شد؛ خدایانِ والار و مایار آن را شکل دادند و ملکور، نخستین تاریکی، در آن شکاف انداخت.</p>
+            </article>
+            <article class="pillar reveal" style="--delay:.12s">
+              <span class="pillar-icon"><svg class="icon"><use href="#i-book"/></svg></span>
+              <h3>افسانه‌ای مکتوب</h3>
+              <p>شاهکار تالکین از کتاب «هابیت» (۱۹۳۷) آغاز شد و با سه‌گانه «ارباب حلقه‌ها» (۱۹۵۴–۱۹۵۵) به قلب ادبیات قرن بیستم راه یافت.</p>
+            </article>
+            <article class="pillar reveal" style="--delay:.19s">
+              <span class="pillar-icon"><svg class="icon"><use href="#i-leaf"/></svg></span>
+              <h3>زبان‌هایی که زنده‌اند</h3>
+              <p>کوئنیا و سینداری نه رمزگذاری ساده، بلکه زبان‌هایی با دستور و شعر کامل‌اند؛ ریشه‌ای که جهان تالکین از آن رویید.</p>
+            </article>
+            <article class="pillar reveal" style="--delay:.26s">
+              <span class="pillar-icon"><svg class="icon"><use href="#i-ring"/></svg></span>
+              <h3>حلقه، محور همه چیز</h3>
+              <p>حلقه یگانه اراده سائورون را در خود دارد؛ وسوسه‌ای که پادشاهان، جادوگران و حتی هابیت‌های ساده را به آزمون می‌کشد.</p>
+            </article>
+          </div>
+        </div>
+
+        <div class="stat-strip reveal" role="list">
+          <div class="stat" role="listitem"><strong data-count="3" data-fa="true">۳</strong><span>دوره ثبت‌شده در سالنامه‌ها</span></div>
+          <div class="stat" role="listitem"><strong data-count="20" data-fa="true">۲۰</strong><span>حلقه قدرت آفریده‌شده</span></div>
+          <div class="stat" role="listitem"><strong data-count="3019" data-fa="true">۳۰۱۹</strong><span>سال سوم، سال نبرد حلقه</span></div>
+          <div class="stat" role="listitem"><strong data-count="1" data-fa="true">۱</strong><span>حلقه برای فرمانروایی بر همه</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-map" id="map" aria-labelledby="mapTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">THE MAP OF MIDDLE-EARTH</p>
+          <h2 id="mapTitle">نقشه <span class="gold-text">سرزمین میانه</span></h2>
+          <p>بر سرزمین‌های غرب و شرق، کوه‌های مه‌گرفته و دشت‌های بی‌پایان سفر کنید. روی نشان‌ها بزنید تا داستان هر مکان را بخوانید.</p>
+          <div class="ornament" aria-hidden="true"><span></span><svg class="icon"><use href="#i-star"/></svg><span></span></div>
+        </div>
+
+        <div class="map-filters reveal" role="group" aria-label="فیلتر مناطق نقشه">
+          <button class="chip is-active" data-region="all" type="button">همه سرزمین‌ها</button>
+          <button class="chip" data-region="شمال" type="button">شمال</button>
+          <button class="chip" data-region="غرب" type="button">غرب</button>
+          <button class="chip" data-region="مرکز" type="button">مرکز</button>
+          <button class="chip" data-region="جنوب" type="button">جنوب</button>
+          <button class="chip" data-region="تاریکی" type="button">قلمرو تاریکی</button>
+        </div>
+
+        <div class="map-layout">
+          <div class="map-card reveal">
+            <div class="map-frame">
+              <svg class="middle-map" viewBox="0 0 1000 720" role="img" aria-label="نقشه نمادین سرزمین میانه">
+                <defs>
+                  <radialGradient id="seaGrad" cx="50%" cy="45%" r="75%">
+                    <stop offset="0" stop-color="#16323a"/><stop offset=".6" stop-color="#0d2028"/><stop offset="1" stop-color="#081318"/>
+                  </radialGradient>
+                  <linearGradient id="landGrad" x1="0" y1="0" x2=".8" y2="1">
+                    <stop offset="0" stop-color="#26352c"/><stop offset=".5" stop-color="#1d2a24"/><stop offset="1" stop-color="#131c19"/>
+                  </linearGradient>
+                  <linearGradient id="mtnGrad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#5b6155"/><stop offset="1" stop-color="#2a3029"/>
+                  </linearGradient>
+                  <filter id="mapGlow" x="-20%" y="-20%" width="140%" height="140%">
+                    <feGaussianBlur stdDeviation="3.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                  </filter>
+                </defs>
+                <rect width="1000" height="720" fill="url(#seaGrad)"/>
+                <g opacity=".16" stroke="#9fc9c2" fill="none">
+                  <path d="M0 120c170-40 300 30 470 0s330-60 530-10"/>
+                  <path d="M0 200c190-30 310 40 500 10s340-50 500-16"/>
+                  <path d="M0 560c200-26 330 20 500-10s320-44 500-8"/>
+                  <path d="M0 630c210-22 340 24 520-8s300-30 480-2"/>
+                </g>
+                <g class="map-land">
+                  <path d="M118 148c118-62 256-74 382-38 76 22 144 20 210 2 92-25 160 16 196 70 42 63 20 129 52 190 27 52 16 117-40 152-58 36-118 28-178 62-64 36-148 54-226 32-80-22-150-2-226-46-74-43-125-112-134-189-8-70 14-142-8-204-9-26-14-42-28-31Z" fill="url(#landGrad)" stroke="#6f7358" stroke-width="4" stroke-opacity=".55"/>
+                  <path d="M118 148c118-62 256-74 382-38 76 22 144 20 210 2 92-25 160 16 196 70" fill="none" stroke="#b7a66d" stroke-opacity=".3" stroke-width="1.5"/>
+                  <g opacity=".5" stroke="#8ea085" fill="none" stroke-width="1">
+                    <path d="M180 200c90-30 170-24 250 6"/>
+                    <path d="M210 500c80 34 160 40 250 18"/>
+                    <path d="M600 540c60 16 120 12 176-12"/>
+                    <path d="M470 160c30 46 26 94-6 134"/>
+                  </g>
+                </g>
+                <g class="map-region-tint" opacity=".55">
+                  <ellipse cx="284" cy="272" rx="112" ry="76" fill="#3f6b3f" opacity=".33"/>
+                  <ellipse cx="410" cy="286" rx="88" ry="76" fill="#3c5e59" opacity=".33"/>
+                  <ellipse cx="744" cy="470" rx="128" ry="112" fill="#57251c" opacity=".38"/>
+                  <ellipse cx="468" cy="500" rx="120" ry="74" fill="#6b5a2d" opacity=".28"/>
+                  <ellipse cx="612" cy="188" rx="92" ry="62" fill="#4a4f50" opacity=".3"/>
+                </g>
+                <g class="map-mountains" stroke="#141a17" stroke-linejoin="round">
+                  <path d="M360 248l30-52 30 52-30-14Z" fill="url(#mtnGrad)"/>
+                  <path d="M420 220l34-58 34 58-34-16Z" fill="url(#mtnGrad)"/>
+                  <path d="M488 250l30-54 30 54-30-14Z" fill="url(#mtnGrad)"/>
+                  <path d="M548 208l36-62 36 62-36-16Z" fill="url(#mtnGrad)"/>
+                  <path d="M610 246l30-52 30 52-30-14Z" fill="url(#mtnGrad)"/>
+                  <path d="M300 352l28-48 28 48-28-13Z" fill="url(#mtnGrad)"/>
+                  <path d="M348 386l24-42 24 42-24-12Z" fill="url(#mtnGrad)"/>
+                  <path d="M640 390l28-48 28 48-28-13Z" fill="url(#mtnGrad)"/>
+                  <path d="M688 436l24-42 24 42-24-12Z" fill="url(#mtnGrad)"/>
+                  <path d="M738 406l30-52 30 52-30-14Z" fill="url(#mtnGrad)"/>
+                </g>
+                <g class="map-forests" fill="#31583a" opacity=".85">
+                  <g transform="translate(468 300)">
+                    <circle r="16"/><circle cx="20" cy="10" r="13"/><circle cx="-18" cy="12" r="12"/><circle cx="4" cy="22" r="13"/><circle cx="26" cy="-6" r="10"/>
+                  </g>
+                  <g transform="translate(250 226)">
+                    <circle r="12"/><circle cx="18" cy="8" r="9"/><circle cx="-15" cy="6" r="8"/><circle cx="2" cy="16" r="10"/>
+                  </g>
+                  <g transform="translate(566 326)">
+                    <circle r="10"/><circle cx="14" cy="-6" r="8"/><circle cx="10" cy="12" r="9"/>
+                  </g>
+                </g>
+                <g class="map-rivers" fill="none" stroke="#5d9aa3" stroke-linecap="round">
+                  <path d="M402 246c30 46 40 78 34 116-6 40 8 74 40 96 28 20 44 44 46 76" stroke-width="4" opacity=".75"/>
+                  <path d="M664 264c-10 40 4 72 22 100 20 30 24 60 14 92" stroke-width="3" opacity=".6"/>
+                  <path d="M252 310c-20 42-18 84 4 116 18 26 24 52 20 78" stroke-width="3" opacity=".55"/>
+                </g>
+                <g class="map-compass" transform="translate(878 92)" fill="none" stroke="#b9a36b" opacity=".75">
+                  <circle r="36" stroke-width="1.4"/>
+                  <circle r="26" stroke-width=".8" stroke-dasharray="2 5"/>
+                  <path d="M0-42 8-8 0 0-8-8Z" fill="#b9a36b" stroke="none"/>
+                  <path d="M0 42 5 10 0 0-5 10Z" fill="#5e5a45" stroke="none"/>
+                  <path d="M-42 0-10 6 0 0-10-6ZM42 0 10-6 0 0 10 6Z" fill="#5e5a45" stroke="none"/>
+                  <text x="0" y="-50" text-anchor="middle" fill="#b9a36b" stroke="none" font-size="13" font-family="Cinzel, serif">N</text>
+                </g>
+                <path class="journey-path" d="M258 270c34-16 56-14 78-8 54 14 122 10 172 12-20 30-38 44-58 58 24 44 54 78 88 108 30 26 62 38 96 24 24-10 34-2 44 14" fill="none" stroke="#e3bd63" stroke-width="2.4" stroke-dasharray="3 9" stroke-linecap="round" opacity=".85"/>
+                <g class="map-pins" id="mapPins"></g>
+                <g class="map-labels" font-size="16" font-family="Vazirmatn, sans-serif" fill="#d9cfae" opacity=".9">
+                  <text x="700" y="122" text-anchor="middle" font-size="20" opacity=".55">دریای شرقی</text>
+                  <text x="118" y="590" text-anchor="middle" font-size="14" opacity=".5">دریا</text>
+                  <text x="470" y="636" text-anchor="middle" font-size="14" opacity=".45">خلیج بلفالاس</text>
+                </g>
+              </svg>
+              <div class="map-vignette" aria-hidden="true"></div>
+            </div>
+            <p class="map-note"><svg class="icon"><use href="#i-map"/></svg> مسیر نقطه‌چین، مسیر تقریبی یاران حلقه از شایر تا کوه نابودی است.</p>
+          </div>
+
+          <aside class="map-panel reveal" id="mapPanel" aria-live="polite">
+            <div class="map-panel-empty">
+              <span class="map-panel-icon"><svg class="icon"><use href="#i-compass"/></svg></span>
+              <h3>یک سرزمین را انتخاب کنید</h3>
+              <p>نشان‌های طلایی روی نقشه، دروازه ورود به تاریخچه، ساکنان و رازهای هر منطقه‌اند.</p>
+              <ul class="map-legend">
+                <li><span class="legend-pin"></span> مکان‌های کلیدی</li>
+                <li><span class="legend-route"></span> مسیر یاران حلقه</li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-races" id="races" aria-labelledby="racesTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">PEOPLES OF ARDA</p>
+          <h2 id="racesTitle">نژادها و <span class="gold-text">موجودات</span></h2>
+          <p>از فرزندان ایلوواتار تا سایه‌های آفریده‌شده در تاریکی؛ هر نژاد سرنوشت، زبان و سرزمین خود را دارد.</p>
+          <div class="ornament" aria-hidden="true"><span></span><svg class="icon"><use href="#i-star"/></svg><span></span></div>
+        </div>
+        <div class="race-grid" id="raceGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-characters" id="characters" aria-labelledby="charactersTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">HEROES &amp; LEGENDS</p>
+          <h2 id="charactersTitle">قهرمانان <span class="gold-text">افسانه</span></h2>
+          <p>یاران حلقه، پادشاهان تبعیدی، بانوی جنگل طلایی و سایه‌هایی که جهان را تهدید می‌کنند. کارت هر شخصیت را باز کنید تا داستان کامل او را بخوانید.</p>
+          <div class="ornament" aria-hidden="true"><span></span><svg class="icon"><use href="#i-star"/></svg><span></span></div>
+        </div>
+        <div class="filter-row reveal" id="characterFilters" role="group" aria-label="فیلتر شخصیت‌ها">
+          <button class="chip is-active" data-filter="all" type="button">همه</button>
+          <button class="chip" data-filter="یاران حلقه" type="button">یاران حلقه</button>
+          <button class="chip" data-filter="الف‌ها" type="button">الف‌ها</button>
+          <button class="chip" data-filter="دورف‌ها" type="button">دورف‌ها</button>
+          <button class="chip" data-filter="انسان‌ها" type="button">انسان‌ها</button>
+          <button class="chip" data-filter="هابیت‌ها" type="button">هابیت‌ها</button>
+          <button class="chip" data-filter="تاریکی" type="button">تاریکی</button>
+        </div>
+        <div class="character-grid" id="characterGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-ring" id="ring" aria-labelledby="ringTitle">
+      <div class="ring-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="ring-layout">
+          <div class="ring-feature reveal">
+            <div class="ring-feature-art" aria-hidden="true">
+              <div class="ember-ring">
+                <svg viewBox="0 0 400 400">
+                  <defs>
+                    <linearGradient id="emberGold" x1="0" y1="0" x2="1" y2="1">
+                      <stop offset="0" stop-color="#8a5410"/><stop offset=".25" stop-color="#ffd884"/><stop offset=".5" stop-color="#d1942d"/><stop offset=".75" stop-color="#ffe9ad"/><stop offset="1" stop-color="#6e3d08"/>
+                    </linearGradient>
+                    <filter id="emberGlow" x="-60%" y="-60%" width="220%" height="220%">
+                      <feGaussianBlur stdDeviation="12" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+                    </filter>
+                  </defs>
+                  <circle cx="200" cy="200" r="150" fill="none" stroke="#ff9a3c" stroke-opacity=".12" stroke-width="60"/>
+                  <circle cx="200" cy="200" r="120" fill="none" stroke="#1b1006" stroke-width="30"/>
+                  <circle cx="200" cy="200" r="120" fill="none" stroke="url(#emberGold)" stroke-width="22" filter="url(#emberGlow)"/>
+                  <circle cx="200" cy="200" r="134" fill="none" stroke="#5e3509" stroke-width="1.6"/>
+                  <circle cx="200" cy="200" r="106" fill="none" stroke="#5e3509" stroke-width="1.6"/>
+                  <path d="M200 54a146 146 0 0 1 103 43" fill="none" stroke="#fff1c1" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+                </svg>
+                <div class="ember-orbit"></div>
+              </div>
+              <div class="ring-fire"></div>
+            </div>
+            <p class="ring-verse-label">THE RING VERSE</p>
+            <blockquote class="ring-verse">
+              <p>سه حلقه برای پادشاهان الف زیر آسمان،<br>هفت برای اربابان دورف در تالارهای سنگی،<br>نه برای انسان‌های فانی که محکوم به مرگ‌اند،<br>یک حلقه برای ارباب تاریکی بر تخت سیاهش<br>در سرزمین موردور که سایه‌ها می‌زیند.</p>
+              <p>یک حلقه برای فرمانروایی بر همه، یک حلقه برای یافتن آنها،<br>یک حلقه برای آوردن همه و در تاریکی به بند کشیدن آنها<br>در سرزمین موردور که سایه‌ها می‌زیند.</p>
+            </blockquote>
+            <p class="ring-translit">Ash nazg durbatulûk, ash nazg gimbatul, ash nazg thrakatulûk agh burzum-ishi krimpatul</p>
+          </div>
+
+          <div class="ring-copy">
+            <div class="section-head section-head-right reveal">
+              <p class="eyebrow">THE ONE RING</p>
+              <h2 id="ringTitle">حلقه <span class="gold-text">یگانه</span></h2>
+              <p>سائورون در آتش کوه نابودی حلقه‌ای ساخت و بخشی از اراده خود را در آن جای داد. حلقه تنها وقتی نابود می‌شود که به همان آتش بازگردد؛ جایی که آفریده شد.</p>
+            </div>
+            <div class="ring-facts reveal">
+              <div class="ring-fact"><span>سازنده</span><strong>سائورون</strong></div>
+              <div class="ring-fact"><span>محل ساخت</span><strong>کوه نابودی</strong></div>
+              <div class="ring-fact"><span>حاملان اصلی</span><strong>سائورون · ایسیلدور · دئاگول · بیلبو · فرودو</strong></div>
+              <div class="ring-fact"><span>سرنوشت</span><strong>نابودشده در ۲۵ مارس ۳۰۱۹</strong></div>
+            </div>
+            <div class="ring-of-power-grid reveal">
+              <article class="power-card"><span class="power-count">۳</span><h3>حلقه‌های الف</h3><p>نیر، ننیا و ویلیا؛ سه حلقه‌ای که کلبریمبور بدون دخالت سائورون ساخت. پس از نابودی حلقه یگانه، نیروی آنها خاموش شد.</p></article>
+              <article class="power-card"><span class="power-count">۷</span><h3>حلقه‌های دورف</h3><p>به هفت ارباب دورف سپرده شد؛ حرص طلا را در آنان برانگیخت، اما اراده‌شان را کاملاً به بند نکشید.</p></article>
+              <article class="power-card"><span class="power-count">۹</span><h3>حلقه‌های انسان</h3><p>نُه پادشاه فانی را به نازگول‌ها، سایه‌های حلقه، تبدیل کرد؛ بندگان ترس و اراده سائورون.</p></article>
+              <article class="power-card power-card-one"><span class="power-count">۱</span><h3>حلقه یگانه</h3><p>فرمانروای دیگر حلقه‌ها؛ آن که آن را در اختیار دارد، در برابر وسوسه آن نیز آسیب‌پذیر است.</p></article>
+            </div>
+            <a class="text-link reveal" href="#artifacts">گنجینه‌های دیگر را ببینید <svg class="icon"><use href="#i-arrow"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-timeline" id="timeline" aria-labelledby="timelineTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">THE AGES OF ARDA</p>
+          <h2 id="timelineTitle">گاه‌شمار <span class="gold-text">دوره‌ها</span></h2>
+          <p>از آهنگ آفرینش تا عصر انسان‌ها؛ مهم‌ترین رخدادهای تاریخ آردا را دوره به دوره دنبال کنید.</p>
+          <div class="ornament" aria-hidden="true"><span></span><svg class="icon"><use href="#i-star"/></svg><span></span></div>
+        </div>
+        <div class="era-tabs reveal" id="eraTabs" role="tablist" aria-label="دوره‌های تاریخی"></div>
+        <div class="era-layout">
+          <aside class="era-summary reveal" id="eraSummary" aria-live="polite"></aside>
+          <div class="timeline reveal" id="timelineList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-books" id="books" aria-labelledby="booksTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">BOOKS &amp; ADAPTATIONS</p>
+          <h2 id="booksTitle">کتاب‌ها و <span class="gold-text">اقتباس‌ها</span></h2>
+          <p>از کتاب‌های بنیادین تالکین تا پرده نقره‌ای و سریال‌های امروز؛ دروازه‌های ورود به این جهان را بشناسید.</p>
+          <div class="ornament" aria-hidden="true"><span></span><svg class="icon"><use href="#i-star"/></svg><span></span></div>
+        </div>
+        <div class="tabs reveal" id="bookTabs" role="tablist" aria-label="دسته‌بندی کتاب و اقتباس">
+          <button class="tab is-active" data-book-tab="book" role="tab" aria-selected="true" type="button">کتاب‌ها</button>
+          <button class="tab" data-book-tab="film" role="tab" aria-selected="false" type="button">فیلم‌ها</button>
+          <button class="tab" data-book-tab="series" role="tab" aria-selected="false" type="button">سریال‌ها</button>
+        </div>
+        <div class="book-grid" id="bookGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-artifacts" id="artifacts" aria-labelledby="artifactsTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">TREASURES OF ARDA</p>
+          <h2 id="artifactsTitle">گنجینه‌های <span class="gold-text">افسانه‌ای</span></h2>
+          <p>شمشیرهای شکسته، سنگ‌های درخشان و جامه‌هایی که تاریخ را تغییر دادند. هر گنجینه، داستانی از جاه‌طلبی، وفاداری یا نفرین را در خود دارد.</p>
+          <div class="ornament" aria-hidden="true"><span></span><svg class="icon"><use href="#i-star"/></svg><span></span></div>
+        </div>
+        <div class="artifact-grid" id="artifactGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-languages" id="languages" aria-labelledby="languagesTitle">
+      <div class="container">
+        <div class="language-layout">
+          <div class="section-head section-head-right reveal">
+            <p class="eyebrow">LANGUAGES OF THE ELDAR</p>
+            <h2 id="languagesTitle">زبان و <span class="gold-text">خط</span></h2>
+            <p>تالکین پیش از نوشتن داستان‌ها، زبان‌ها را آفرید. کوئنیا زبان والای الف‌ها بود و سینداری زبان خاکستری؛ هر دو با خط تنگوار نوشته می‌شدند.</p>
+            <p class="language-note">در این بخش چند واژه و عبارت آشنا را با معنی و تلفظ آن‌ها می‌بینید.</p>
+          </div>
+          <div class="language-cards" id="languageCards"></div>
+        </div>
+        <div class="tengwar-banner reveal" aria-label="نمونه شعر الفی">
+          <span class="tengwar-mark" aria-hidden="true">A</span>
+          <div>
+            <p class="tengwar-quote">A Elbereth Gilthoniel, silivren penna míriel</p>
+            <p class="tengwar-caption">«ای البرث ستاره‌ساز، درخشان همچون جواهر فرومی‌روی» — سرود الف‌های ریوندل</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-gallery" id="gallery" aria-labelledby="galleryTitle">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">SCENES OF MIDDLE-EARTH</p>
+          <h2 id="galleryTitle">گالری <span class="gold-text">سرزمین میانه</span></h2>
+          <p>هشت منظره از گوشه‌های جهان تالکین؛ تصویرسازی‌هایی که با الهام از داستان‌ها برای این مجموعه خلق شده‌اند.</p>
+          <div class="ornament" aria-hidden="true"><span></span><svg class="icon"><use href="#i-star"/></svg><span></span></div>
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-quiz" id="quiz" aria-labelledby="quizTitle">
+      <div class="quiz-glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="quiz-layout">
+          <div class="quiz-intro reveal">
+            <p class="eyebrow">THE FELLOWSHIP TEST</p>
+            <h2 id="quizTitle">آزمون <span class="gold-text">یاران حلقه</span></h2>
+            <p>آیا آماده‌اید تا وفاداری‌تان به سرزمین میانه را بسنجید؟ دوازده پرسش از حلقه‌ها، نبردها، زبان‌ها و قهرمانان؛ با پاسخ‌های توضیحی.</p>
+            <ul class="quiz-points">
+              <li><svg class="icon"><use href="#i-check"/></svg> ۱۲ پرسش از سراسر افسانه</li>
+              <li><svg class="icon"><use href="#i-check"/></svg> توضیح کوتاه پس از هر پاسخ</li>
+              <li><svg class="icon"><use href="#i-check"/></svg> ثبت بهترین امتیاز در مرورگر</li>
+            </ul>
+            <div class="quiz-best" id="quizBest" hidden>
+              <span>بهترین امتیاز شما</span>
+              <strong id="quizBestValue">۰</strong>
+            </div>
+          </div>
+
+          <div class="quiz-card reveal" id="quizCard">
+            <div class="quiz-start" id="quizStart">
+              <div class="quiz-emblem" aria-hidden="true">
+                <svg class="icon"><use href="#i-ring"/></svg>
+              </div>
+              <h3>حلقه را بردارید</h3>
+              <p>هر پاسخ درست، یک قدم به قلب سرزمین میانه نزدیک‌تر است. آماده‌اید؟</p>
+              <button class="btn btn-primary" id="quizStartBtn" type="button">
+                <span>شروع آزمون</span>
+                <svg class="icon"><use href="#i-arrow"/></svg>
+              </button>
+            </div>
+
+            <div class="quiz-body" id="quizBody" hidden>
+              <div class="quiz-meta">
+                <span id="quizStep">پرسش ۱ از ۱۲</span>
+                <span id="quizScore">امتیاز: ۰</span>
+              </div>
+              <div class="quiz-progress" aria-hidden="true"><span id="quizProgressBar"></span></div>
+              <h3 class="quiz-question" id="quizQuestion"></h3>
+              <div class="quiz-options" id="quizOptions"></div>
+              <div class="quiz-feedback" id="quizFeedback" hidden></div>
+              <div class="quiz-actions">
+                <button class="btn btn-primary" id="quizNextBtn" type="button" hidden>
+                  <span id="quizNextLabel">پرسش بعدی</span>
+                  <svg class="icon"><use href="#i-arrow"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="quiz-result" id="quizResult" hidden>
+              <div class="score-ring" id="scoreRing">
+                <span id="resultScore">۰</span>
+                <small>از ۱۲</small>
+              </div>
+              <h3 id="resultTitle"></h3>
+              <p id="resultText"></p>
+              <div class="quiz-result-actions">
+                <button class="btn btn-primary" id="quizRestartBtn" type="button">
+                  <span>آزمون دوباره</span>
+                  <svg class="icon"><use href="#i-spark"/></svg>
+                </button>
+                <a class="btn btn-ghost" href="#characters">بازگشت به قهرمانان</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="brand-mark">
+            <svg viewBox="0 0 48 48" aria-hidden="true">
+              <circle cx="24" cy="24" r="19.5" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".55"/>
+              <circle cx="24" cy="24" r="14.5" fill="none" stroke="currentColor" stroke-width="3.4"/>
+              <path d="M24 35V21" fill="none" stroke="currentColor" stroke-width="1.6"/>
+              <path d="M24 22c-4.4 0-6.8-3.3-6-6.7 3.6-.8 6.9 1.5 6.9 6.1 0-4.6 3.3-6.9 6.9-6.1.8 3.4-1.7 6.7-6.1 6.7" fill="none" stroke="currentColor" stroke-width="1.4"/>
+              <path d="M19 35h10" stroke="currentColor" stroke-width="1.4" fill="none"/>
+            </svg>
+          </span>
+          <div>
+            <strong>سرزمین میانه</strong>
+            <p>راهنمای جامع دنیای ارباب حلقه‌ها</p>
+          </div>
+        </div>
+        <nav class="footer-nav" aria-label="ناوبری پایین صفحه">
+          <a href="#about">دنیای تالکین</a>
+          <a href="#map">نقشه</a>
+          <a href="#races">نژادها</a>
+          <a href="#characters">شخصیت‌ها</a>
+          <a href="#timeline">گاه‌شمار</a>
+          <a href="#books">کتاب و فیلم</a>
+          <a href="#artifacts">گنجینه‌ها</a>
+          <a href="#gallery">گالری</a>
+        </nav>
+        <div class="footer-social">
+          <p class="footer-social-title">R1ngs Of Power را دنبال کنید</p>
+          <div class="social-links">
+            <a class="social-link" href="https://www.instagram.com/R1ngs_Of_Power" target="_blank" rel="noopener noreferrer" aria-label="صفحه اینستاگرام R1ngs Of Power">
+              <svg class="icon" aria-hidden="true"><use href="#i-instagram"/></svg>
+              <span>اینستاگرام<small>@R1ngs_Of_Power</small></span>
+            </a>
+            <a class="social-link" href="https://t.me/R1NGS_OF_POWER" target="_blank" rel="noopener noreferrer" aria-label="کانال تلگرام R1NGS OF POWER">
+              <svg class="icon" aria-hidden="true"><use href="#i-telegram"/></svg>
+              <span>تلگرام<small>@R1NGS_OF_POWER</small></span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-quote">
+        <p>«راه رفتن در تاریکی، دیدن ستاره‌ها را ممکن می‌کند.»</p>
+      </div>
+      <div class="footer-bottom">
+        <p>این سایتی غیررسمی و هوادارانه است. حق تمام آثار به خانواده و بنیاد تالکین تعلق دارد.</p>
+        <p class="footer-mark">MIDDLE-EARTH · A FAN COMPENDIUM</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="بازگشت به بالا">
+    <svg class="icon"><use href="#i-arrow"/></svg>
+  </button>
+
+  <dialog class="search-dialog" id="searchDialog" aria-labelledby="searchTitle">
+    <div class="search-head">
+      <svg class="icon"><use href="#i-search"/></svg>
+      <input type="search" id="searchInput" placeholder="جست‌وجوی شخصیت، مکان، کتاب یا گنجینه…" autocomplete="off" aria-label="جست‌وجو">
+      <button class="icon-btn" id="searchClose" type="button" aria-label="بستن جست‌وجو"><svg class="icon"><use href="#i-close"/></svg></button>
+    </div>
+    <h2 class="visually-hidden" id="searchTitle">جست‌وجو در سرزمین میانه</h2>
+    <div class="search-body" id="searchResults"></div>
+    <p class="search-hint"><kbd>Esc</kbd> برای بستن · <kbd>Ctrl</kbd> + <kbd>K</kbd> برای باز کردن</p>
+  </dialog>
+
+  <dialog class="detail-dialog" id="characterDialog" aria-labelledby="detailName">
+    <button class="dialog-close" id="detailClose" type="button" aria-label="بستن"><svg class="icon"><use href="#i-close"/></svg></button>
+    <div id="characterDetail"></div>
+  </dialog>
+
+  <dialog class="gallery-dialog" id="galleryDialog" aria-labelledby="galleryDetailTitle">
+    <button class="dialog-close" id="galleryClose" type="button" aria-label="بستن"><svg class="icon"><use href="#i-close"/></svg></button>
+    <div class="gallery-detail">
+      <div class="gallery-detail-art" id="galleryDetailArt"></div>
+      <div class="gallery-detail-copy">
+        <p class="eyebrow" id="galleryDetailEn"></p>
+        <h3 id="galleryDetailTitle"></h3>
+        <p id="galleryDetailDesc"></p>
+        <blockquote id="galleryDetailQuote"></blockquote>
+        <div class="gallery-detail-nav">
+          <button class="icon-btn" id="galleryPrev" type="button" aria-label="تصویر قبلی"><svg class="icon"><use href="#i-arrow"/></svg></button>
+          <span id="galleryCounter"></span>
+          <button class="icon-btn" id="galleryNext" type="button" aria-label="تصویر بعدی"><svg class="icon flipped"><use href="#i-arrow"/></svg></button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
